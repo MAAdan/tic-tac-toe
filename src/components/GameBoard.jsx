@@ -1,6 +1,6 @@
 export default function GameBoard({onSelectSquare, board}) {
     return <ol id="game-board">
-        {gameBoard.map((row, rowIndex) => (
+        {board.map((row, rowIndex) => (
             <li key={rowIndex}>
                 <ol>
                     {row.map((playerSymbol, colIndex) => (
